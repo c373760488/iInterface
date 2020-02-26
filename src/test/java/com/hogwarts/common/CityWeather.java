@@ -30,7 +30,7 @@ public class CityWeather {
     private Properties loadFromEnvProperties(String propFileName) {
         Properties prop = null;
 
-        String path = System.getProperty("user.home");
+        String path = System.getProperty("user.dir"+File.separator+"src"+File.separator+File.separator+"test"+File.separator+"resources");
 
         //读入envProperties属性文件
         try {
